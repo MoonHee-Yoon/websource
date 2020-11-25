@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  form action="register.jsp" method="get">-->
+    <form action="register.jsp" method="post">
+        <fieldset>
+            <legend>필수사항</legend>
+            <div>
+            	<input type="hidden" name="age" value="99">
+            </div>
+            <p>
+                <label for="">이름</label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for="">이메일</label>
+                <input type="text">
+            </p>
+            <p>
+                <label for="">비밀번호</label>
+                <input type="password">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>부가 입력 사항</legend>
+            <p>
+                거주지를 선택해!
+                <br>
+                <select name="" id="">
+                    <option value="경기도 광주시">서울시</option>
+                    <option value="서울시">서울시</option>
+                    <option value="부산시">부산시</option>
+                    <option value="제주시">제주시</option>
+                    <option value="평양시">제주시</option>                    
+                </select>
+            </p>
+            <p>
+                <label for="">취미</label>
+                <input type="checkbox" name="hobby" id="">독서
+                <input type="checkbox" name="hobby" id="">여행
+                <input type="checkbox" name="hobby" id="">영화감상
+            </p>
+            <p>
+                <label for="">성별</label>
+                <input type="radio" name="gender" id="">남성
+                <input type="radio" name="gender" id="">여성
+            </p>
+            <p>
+                <label for="">사진을 등록해!</label>
+                <input type="file" name="" id="">
+            </p>
+            <p>
+                방문경로를 말해라! <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="">회원가입
+            <input type="reset" value="">재작성
+            <button type="submit" >전송</button>
+            <!--  button 안에 이미지를 쓰게 되면 배경이 생겨버림 -->
+      		<button type="submit" class="btn" >
+      		<img src="../201118-02-image/dog.jpg" alt="">
+ 			</button>
+        </p>
+    </form>
+</body>
+
+</html>
